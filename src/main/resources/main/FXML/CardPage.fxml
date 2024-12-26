@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.CardPageController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #24222C;">
+         <children>
+            <Text fx:id="CardSetTitle" fill="WHITE" layoutX="44.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Untitled Card Set">
+               <font>
+                  <Font name="Yu Gothic UI Regular" size="20.0" />
+               </font>
+            </Text>
+            <VBox fx:id="flashcardVBox" layoutX="26.0" layoutY="175.0" prefHeight="153.0" prefWidth="528.0" />
+            <Button fx:id="returnFrontPage" layoutX="458.0" layoutY="356.0" mnemonicParsing="false" text="Return to Front Page" onAction="#returnFrontPage" />
+            <Button fx:id="addFlashcardButton" layoutX="44.0" layoutY="77.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="147.0" text="Add Card" onAction="#handleAddFlashcard"/>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

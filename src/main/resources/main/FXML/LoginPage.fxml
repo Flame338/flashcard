@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.LoginPageController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="304.0" style="-fx-background-color: #24222C;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="58.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FlashcardsMadeEasy" textAlignment="CENTER">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="20.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="98.0" layoutX="97.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="42.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.21318937838077545" green="0.17499999701976776" blue="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4000000059604645" green="0.23600000143051147" blue="0.33343401551246643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="98.0" layoutX="141.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="26.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.21318937838077545" green="0.17499999701976776" blue="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4000000059604645" green="0.23600000143051147" blue="0.33343401551246643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Circle layoutX="192.0" layoutY="109.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.21318937838077545" green="0.17499999701976776" blue="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4000000059604645" green="0.23600000143051147" blue="0.33343401551246643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="182.0" layoutY="151.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.21318937838077545" green="0.17499999701976776" blue="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4000000059604645" green="0.23600000143051147" blue="0.33343401551246643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="204.0" layoutY="169.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.21318937838077545" green="0.17499999701976776" blue="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4000000059604645" green="0.23600000143051147" blue="0.33343401551246643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="474.0" style="-fx-background-color: #382D41;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameInput" blendMode="SCREEN" layoutX="73.0" layoutY="147.0" promptText="Enter Username" style="-fx-background-color: #332D41; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font name="Yu Gothic UI Regular" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordInput" blendMode="SCREEN" layoutX="72.0" layoutY="213.0" promptText="Enter Password" style="-fx-background-color: #332D41; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font name="Yu Gothic UI Regular" size="12.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="106.0" layoutY="270.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="75.0" style="-fx-background-color: #24222C;" text="Login" textFill="WHITE" onAction="#handleLogin">
+               <font>
+                  <Font name="Yu Gothic UI Regular" size="12.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="LinktoSignUpPage" layoutX="117.0" layoutY="357.0" onMouseClicked="#handleNewUser" text="New user?" onAction="#handleNewUser">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Hyperlink>
+            <Text fill="WHITE" layoutX="103.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="19.0" />
+               </font></Text>
+            <Label fx:id="ErrorMessage" layoutX="127.0" layoutY="121.0" text="" textFill="#b51717" visible="false" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
